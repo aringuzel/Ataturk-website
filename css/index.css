@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url('/images/back2.png');
+  background-position: center;
+  background-size: cover;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+}
+
+.container::before {
+  content: '';
+  background: rgba(0,0,0,.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: fixed;
+}
+
+.navbar {
+  height: 12%;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  cursor: pointer;
+}
+
+.menu-icon {
+  width: 30px;
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 60px;
+}
+
+nav ul li a, .translate {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  border-color: #333;
+  background-color: #333;
+}
+
+/*nav ul li a{
+text-decoration: none;
+color: #fff;
+font-size: 13px;
+border-radius: 20px;
+box-sizing: 20px;
+border-color: #000;
+}*/
+
+.row {
+  display: flex;
+  height: 88%;
+  align-items: center;
+}
+
+.col {
+  flex-basis: 50%;
+}
+
+h1 {
+  color: #fff;
+  font-size: 100px;
+}
+
+p {
+  color: #fff;
+  font-size: 15px;
+  line-height: 14px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.card {
+  width: 220px;
+  height: 250px;
+  display: inline-flex;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-image: url('/images/card.jpg');
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s;
+}
+
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+h5 {
+  color: #fff;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 610px) {
+  .row {
+    flex-direction: column;
+  }
+  .col {
+    text-align: center;
+  }
+  .flex {
+    max-width: 100%;
+  }
+  h1  {
+    color: #000;
+  }
+  p {
+    color: #000;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/back2.png');
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+  }
+  .card {
+    width: 220px;
+    height: 250px;
+    display: inline-flex;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: url('/images/card.jpg');
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+  }
+}

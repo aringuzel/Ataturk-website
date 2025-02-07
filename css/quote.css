@@ -1,0 +1,101 @@
+.translate {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    border-color: #333;
+    background-color: #333;
+  }
+  
+.navbar {
+  height: 12%;
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  padding: 2em;
+}
+  
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: url('/images/bb.jpg') no-repeat center fixed;
+  color: #fff;
+  padding: 2em;
+  background-position: center;
+  background-size: cover;
+}
+  
+.quote-container {
+  height: 80vh;
+  width: 100%;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  padding: 32px;
+  box-sizing: border-box;
+}
+  
+.quote-container .quote {
+  max-width: 700px;
+  position: relative;
+}
+
+.quote-container .quote-icon {
+  position: absolute;
+  left: -76px;
+  top: -48px;
+  transform: scale(1.5) rotateZ(5deg);
+  opacity: 0.4;
+}
+
+.quote-container .quote-content {
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+}
+
+.quote-container .quote-author {
+  font-size: 18px;
+  border-top: 1px solid darkred;
+  padding: 16px 32px;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.quote-container .new-quote-btn {
+  padding: 16px 36px;
+  position: fixed;
+  bottom: 36px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  cursor: pointer;
+  transition: all 500ms ease;
+}
+
+.quote-container .new-quote-btn:hover {
+  background: darkgray;
+}
+
+@media (max-width: 900px) {
+  .quote-container .quote-icon {
+    left: -16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .quote-container .quote-content {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+}
